@@ -1,4 +1,4 @@
-# CUDA Setup for Jetson Platform
+# Pytorch Setup for Jetson Platform
 
 ## **Installation Guide:**
 
