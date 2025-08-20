@@ -1,5 +1,12 @@
 # Pytorch Setup for Jetson Platform
 
+## **Why This Installation Method is Necessary**
+
+Installing PyTorch on an NVIDIA Jetson device requires a specific approach to leverage its powerful, integrated GPU. A standard `pip install torch` command typically downloads a package that is not compiled with CUDA support for the Jetson's architecture. As a result, your code would fall back to running on the much slower CPU, defeating the purpose of using a Jetson for accelerated computing.
+
+The method detailed below ensures you install an official, pre-compiled PyTorch "wheel" provided by NVIDIA. This version is specifically built for the Jetson platform and JetPack SDK, enabling PyTorch to utilize the onboard GPU and CUDA cores for significant performance gains in machine learning and deep learning tasks.
+
+---
 ## **Installation Guide:**
 
 1. **Navigate to the NVIDIA documentation:**
